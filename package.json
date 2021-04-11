@@ -29,5 +29,10 @@
       "email": "snirpo@gmail.com"
     }
   ],
-  "repository": "github:snirpo/node-vad"
+  "repository": "github:snirpo/node-vad",
+  "binary": {
+    "napi_versions": [
+      3
+    ]
+  }
 }
