@@ -25,11 +25,11 @@
   "gypfile": true,
   "maintainers": [
     {
-      "name": "snirpo",
-      "email": "snirpo@gmail.com"
+      "name": "jitinl",
+      "email": "jitinl@gmail.com"
     }
   ],
-  "repository": "github:snirpo/node-vad",
+  "repository": "github:jitinl/node-vad",
   "binary": {
     "napi_versions": [
       3
