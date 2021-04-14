@@ -2,13 +2,13 @@
   "name": "node-vad",
   "repository": {
     "type": "git",
-    "url": "gi@github.com:jitinl/node-vad"
+    "url": "git@github.com:jitinl/node-vad"
   },
   "author": {
     "name": "Snirpo"
   },
   "description": "Voice Activity Detection library for Node",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "scripts": {
     "install": "prebuild-install -r napi ||node-gyp rebuild",
     "prebuild": "prebuild --runtime napi --all --strip --verbose",
