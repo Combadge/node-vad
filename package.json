@@ -8,9 +8,10 @@
     "name": "Snirpo"
   },
   "description": "Voice Activity Detection library for Node",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "scripts": {
-    "install": "prebuild-install -r napi -T ${GITHUB_TOKEN} ||node-gyp rebuild",
+    "install": "prebuild-install -r napi ||node-gyp rebuild",
+    "prebuild": "prebuild --runtime napi --all --strip --verbose",
     "upload": "prebuild  -t 3 --runtime napi --upload ${GITHUB_TOKEN}"
   },
   "main": "./index.js",
