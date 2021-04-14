@@ -10,11 +10,8 @@
   "description": "Voice Activity Detection library for Node",
   "version": "1.1.4",
   "scripts": {
-    "install": "node-gyp rebuild",
-    "upload": "prebuild  -t 3 --runtime napi --upload ${GITHUB_TOKEN}",
-    "release-patch": "npm version patch && npm publish",
-    "release-minor": "npm version minor && npm publish",
-    "release-major": "npm version major && npm publish"
+    "install": "prebuild-install -r napi -T ${GITHUB_TOKEN} ||node-gyp rebuild",
+    "upload": "prebuild  -t 3 --runtime napi --upload ${GITHUB_TOKEN}"
   },
   "main": "./index.js",
   "license": "MIT",
@@ -25,6 +22,7 @@
   "dependencies": {
     "bindings": "^1.5.0",
     "nan": "^2.14.0",
+    "node-addon-api": "^3.1.0",
     "util-promisifyall": "^1.0.6"
   },
   "gypfile": true,
@@ -40,6 +38,8 @@
     ]
   },
   "devDependencies": {
-    "prebuild": "^10.0.1"
+    "node-gyp": "^8.0.0",
+    "prebuild": "^10.0.1",
+    "prebuild-install": "^6.1.1"
   }
 }
