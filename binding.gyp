@@ -4,7 +4,7 @@
             'target_name': 'vad',
             'product_extension': 'node',
             'type': 'loadable_module',
-            'defines': [],
+            'defines': ["NAPI_VERSION=<(napi_build_version)",],
             'include_dirs': ["<!(node -e \"require('nan')\")", "./src"],
             'sources': [
                 'src/simplevad.c',
