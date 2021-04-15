@@ -10,9 +10,9 @@
   "description": "Voice Activity Detection library for Node",
   "version": "1.2.3",
   "scripts": {
-    "install": "prebuild-install -t 3 -r napi ||node-gyp rebuild",
-    "prebuild": "prebuild -t 3 -r napi --all --strip --verbose",
-    "upload": "prebuild  -t 3 -r napi --strip --upload ${GITHUB_TOKEN}"
+    "install": "prebuild-install",
+    "prebuild": "prebuild --all --strip --verbose",
+    "upload": "prebuild --all --strip --upload ${GITHUB_TOKEN}"
   },
   "main": "./index.js",
   "license": "MIT",
